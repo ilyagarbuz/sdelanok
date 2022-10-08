@@ -1,30 +1,35 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <div class="min-h-full font-Raleway text-default-text-color box-border pb-11">
+    <BaseHeader />
+    <!-- Main -->
+    <main>
+      <router-view @eventModal="openModal" />
+    </main>
+    <ContactBar @eventModal="openModal" />
+    <BaseModal :open="isOpenModal" @close="isOpenModal = !isOpenModal">
+      <ModalContent :title="modalData.title" :text="modalData.text" />
+      <BaseForm :button="modalData.button" />
+    </BaseModal>
+  </div>
 </template>
 
+<script setup>
+import BaseHeader from "@/components/header/BaseHeader.vue";
+import ContactBar from "@/components/elements/ContactBar.vue";
+import BaseModal from "@/components/elements/modal/BaseModal.vue";
+import ModalContent from "@/components/elements/modal/ModalContent.vue";
+import BaseForm from "@/components/elements/form/BaseForm.vue";
+import { ref } from "vue";
+
+// Modal
+const isOpenModal = ref(false);
+const modalData = ref({});
+const openModal = (data) => {
+  modalData.value = data;
+  isOpenModal.value = true;
+};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 </style>

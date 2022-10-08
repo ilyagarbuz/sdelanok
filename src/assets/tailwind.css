@@ -1,0 +1,9 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+ .btn {
+   @apply bg-at-blue hover:opacity-70 text-white font-medium py-2 px-10 rounded-sm drop-shadow-lg;
+ }
