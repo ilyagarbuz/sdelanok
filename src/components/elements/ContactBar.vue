@@ -21,14 +21,15 @@
             <a
               @click.prevent="eventModal"
               href="#"
-              class="hidden md:inline-block text-at-blue hover:opacity-70"
-              >Закажите обратный звонок</a
-            >
-            или позвоните
+              class="hidden md:inline-block text-at-blue hover:opacity-70 mr-1"
+              >Закажите обратный звонок
+            </a>
+            <span class="hidden md:inline-block mr-1"> или позвоните </span>
             <a
               href="tel:+375296554722"
-              class="hidden md:inline-block text-at-blue hover:opacity-70 font-number"
-              >+375 (29) 655-47-22</a
+              class="hidden md:inline-block text-at-blue hover:opacity-70 font-number mr-1"
+            >
+              +375 (29) 655-47-22</a
             >
             Работаем без выходных
           </p>

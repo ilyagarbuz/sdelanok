@@ -3,7 +3,7 @@
   <section class="flex items-center">
     <HeroBackground />
     <!-- Hero container -->
-    <div class="container pt-16 hero-height md:pt-10">
+    <div class="container hero-height md:pt-16">
       <!-- Hero content -->
       <div class="md:text-center">
         <!-- Hero heading -->

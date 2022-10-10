@@ -1,7 +1,7 @@
 <template>
   <!-- Hero background -->
   <div
-    class="hero__background absolute -z-10 top-0 right-0 left-0 h-full"
+    class="hero__background absolute -z-10 top-0 right-0 left-0 h-full pointer-events-none"
   ></div>
 </template>
 

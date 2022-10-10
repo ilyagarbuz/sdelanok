@@ -1,5 +1,5 @@
 <template>
-  <HeroSection />
+  <HeroSection @eventModal="$emit('eventModal', { data })" />
   <PortfolioSection />
 </template>
 
