@@ -21,7 +21,7 @@
       </div>
     </div>
     <!-- Container -->
-    <div class="container flex justify-between items-center pt-8 mb-24">
+    <div class="container flex justify-between items-center pt-8">
       <!-- Logo Block -->
       <div class="logo header__logo">
         <a href="#">

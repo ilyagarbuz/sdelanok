@@ -12,3 +12,9 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+section {
+  background-color: #f4f2f5;
+}
+</style>

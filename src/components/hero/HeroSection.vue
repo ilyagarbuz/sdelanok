@@ -1,17 +1,17 @@
 <template>
   <!-- Hero Section -->
-  <section class="flex items-center">
+  <section class="flex hero-height overflow-hidden">
     <HeroBackground />
     <!-- Hero container -->
-    <div class="container hero-height md:pt-16">
+    <div class="container flex flex-col justify-center h-full">
       <!-- Hero content -->
-      <div class="md:text-center">
+      <div class="md:text-center flex flex-col gap-10">
         <!-- Hero heading -->
-        <h1 class="text-4xl font-medium mb-12 md:max-w-2xl md:mx-auto">
+        <h1 class="text-4xl font-medium md:max-w-2xl md:mx-auto">
           Капитальный ремонт квартир по индивидуальному дизайн‑проекту
         </h1>
         <!-- Hero action -->
-        <div class="mb-16">
+        <div class="">
           <button @click="eventModal" class="btn">Узнать стоимость</button>
         </div>
         <!-- Hero benifits -->
@@ -63,6 +63,6 @@ export default {
 
 <style scoped>
 .hero-height {
-  height: calc(100vh + 200px);
+  height: 89vh;
 }
 </style>
