@@ -25,7 +25,6 @@ import { ref } from "vue";
 const isOpenModal = ref(false);
 const modalData = ref({});
 const openModal = (data) => {
-  console.log("open mod");
   modalData.value = data;
   isOpenModal.value = true;
 };
