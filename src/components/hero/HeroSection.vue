@@ -63,6 +63,6 @@ export default {
 
 <style scoped>
 .hero-height {
-  height: calc(100vh - 200px);
+  height: calc(100vh + 200px);
 }
 </style>
