@@ -46,7 +46,7 @@ console.log(props);
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 200%;
   overflow-x: hidden;
   overflow-y: auto;
   background-color: rgba(0, 0, 0, 0.4);
