@@ -2,8 +2,8 @@
   <transition name="fade">
     <div v-if="open" class="modal-base">
       <transition name="drop">
-        <div class="inner" v-show="open">
-          <div class="content bg-white h-screen px-4 pt-16 pb-4">
+        <div class="inner h-full" v-show="open">
+          <div class="content bg-white h-full px-4 pt-16 pb-4">
             <!-- Content wrapper -->
             <div class="content-wrapper md:mx-auto md:max-w-xl md:pt-12">
               <slot />
