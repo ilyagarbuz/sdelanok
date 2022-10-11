@@ -10,6 +10,7 @@ module.exports = {
         "light-grey": "#F4F2F5",
         "default-text-color": "#333",
         "light-text-color": "#999",
+        "modal-bg-color": "rgba(0, 0, 0, 0.6)",
       },
       boxShadow: {
         top: "0px -5px 7px -3px rgba(34, 60, 80, 0.41)",

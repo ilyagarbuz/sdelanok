@@ -1,9 +1,14 @@
 <template>
   <transition name="fade">
-    <div v-if="open" class="modal-base pointer-events-auto">
+    <div
+      v-if="open"
+      class="modal-base bg-white md:bg-modal-bg-color pointer-events-auto"
+    >
       <transition name="drop">
         <div class="inner" v-show="open">
-          <div class="content bg-white h-full px-4 py-16">
+          <div
+            class="content bg-white h-full px-4 py-16 md:max-w-2xl md:mx-auto md:mt-20"
+          >
             <!-- Content wrapper -->
             <div class="content-wrapper md:mx-auto md:max-w-xl md:pt-12">
               <slot />
@@ -47,7 +52,7 @@ console.log(props);
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  /* background-color: rgba(0, 0, 0, 0.6); */
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 1;
