@@ -5,17 +5,24 @@
     class="flex flex-col gap-6 max-w-md group-focus-within:border-at-blue"
   >
     <div class="group flex flex-col gap-2">
-      <BaseInput :label="'Имя'" v-model="formData.name" type="text" />
+      <BaseInput
+        :label="'Имя'"
+        v-model="formData.name"
+        @input="errorMsg = ''"
+        type="text"
+      />
     </div>
     <div class="group flex flex-col gap-2">
       <BaseInput
         :label="'Телефон'"
         :maska="'+375 (##) ###-##-##'"
         v-model="formData.phone"
+        @input="errorMsg = ''"
         type="text"
       />
     </div>
     <div>
+      <div class="text-red-500 text-sm" v-if="errorMsg">{{ errorMsg }}</div>
       <button type="submit" class="btn mt-5">{{ button }}</button>
     </div>
   </form>
@@ -36,10 +43,15 @@ export default {
   data() {
     return {
       formData: {},
+      errorMsg: "",
     };
   },
   methods: {
     submit() {
+      if (!this.formData || !this.formData.name || !this.formData.phone) {
+        this.errorMsg = "Пожалуйтса, заполните все поля.";
+        return;
+      }
       console.log(this.formData);
       this.formData = {};
       this.$emit("close");
