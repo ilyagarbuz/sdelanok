@@ -2,7 +2,7 @@
   <label class="text-sm group-focus-within:text-at-blue">{{ label }}</label>
   <input
     :value="modelValue"
-    class="border-b border-light-text-color focus:outline-none group-focus-within:border-at-blue"
+    class="focus:outline-none border-b border-light-text-color group-focus-within:border-at-blue rounded-none"
     v-bind="$attrs"
     @input="$emit('update:modelValue', $event.target.value)"
   />

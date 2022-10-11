@@ -1,6 +1,6 @@
 <template>
   <!-- Base form -->
-  <form class="flex flex-col gap-6 max-w-md">
+  <form class="flex flex-col gap-6 max-w-md group-focus-within:border-at-blue">
     <div class="group flex flex-col gap-2">
       <BaseInput :label="'Имя'" v-model="formData.name" type="text" />
     </div>
