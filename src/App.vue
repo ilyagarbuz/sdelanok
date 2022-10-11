@@ -8,7 +8,10 @@
     <ContactBar @eventModal="openModal" />
     <BaseModal :open="isOpenModal" @close="isOpenModal = !isOpenModal">
       <ModalContent :title="modalData.title" :text="modalData.text" />
-      <BaseForm :button="modalData.button" />
+      <BaseForm
+        @close="isOpenModal = !isOpenModal"
+        :button="modalData.button"
+      />
     </BaseModal>
   </div>
 </template>

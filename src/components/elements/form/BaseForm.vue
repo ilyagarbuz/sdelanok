@@ -1,14 +1,22 @@
 <template>
   <!-- Base form -->
-  <form class="flex flex-col gap-6 max-w-md group-focus-within:border-at-blue">
+  <form
+    @submit.prevent="submit"
+    class="flex flex-col gap-6 max-w-md group-focus-within:border-at-blue"
+  >
     <div class="group flex flex-col gap-2">
       <BaseInput :label="'Имя'" v-model="formData.name" type="text" />
     </div>
     <div class="group flex flex-col gap-2">
-      <BaseInput :label="'Телефон'" v-model="formData.phone" type="number" />
+      <BaseInput
+        :label="'Телефон'"
+        :maska="'+375 (##) ###-##-##'"
+        v-model="formData.phone"
+        type="text"
+      />
     </div>
     <div>
-      <button class="btn mt-5">{{ button }}</button>
+      <button type="submit" class="btn mt-5">{{ button }}</button>
     </div>
   </form>
 </template>
@@ -29,6 +37,18 @@ export default {
     return {
       formData: {},
     };
+  },
+  methods: {
+    submit() {
+      console.log(this.formData);
+      this.formData = {};
+      this.$emit("close");
+      this.$swal({
+        icon: "success",
+        title: "Отлично!",
+        text: "Менеджер свяжется с вами в ближайшее время.",
+      });
+    },
   },
 };
 </script>

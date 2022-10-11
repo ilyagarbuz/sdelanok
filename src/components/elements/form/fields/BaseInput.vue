@@ -4,6 +4,7 @@
     :value="modelValue"
     class="focus:outline-none border-b border-light-text-color group-focus-within:border-at-blue rounded-none"
     v-bind="$attrs"
+    v-maska="maska"
     @input="$emit('update:modelValue', $event.target.value)"
   />
 </template>
@@ -13,6 +14,10 @@ export default {
   props: {
     label: {
       type: [String],
+      defautlt: "",
+    },
+    maska: {
+      type: String,
       defautlt: "",
     },
     modelValue: {
