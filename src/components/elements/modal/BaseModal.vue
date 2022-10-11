@@ -49,7 +49,6 @@ console.log(props);
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 .content {
