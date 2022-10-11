@@ -2,7 +2,7 @@
   <transition name="fade">
     <div v-if="open" class="modal-base bg-white">
       <transition name="drop">
-        <div class="inner h-full" v-show="open">
+        <div class="inner" v-show="open">
           <div class="content bg-white h-full px-4 py-16">
             <!-- Content wrapper -->
             <div class="content-wrapper md:mx-auto md:max-w-xl md:pt-12">
@@ -46,7 +46,7 @@ console.log(props);
   top: 0;
   left: 0;
   width: 100%;
-  height: 120%;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 1;
