@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div v-if="open" class="modal-base">
+    <div v-if="open" class="modal-base bg-white">
       <transition name="drop">
         <div class="inner h-full" v-show="open">
           <div class="content bg-white h-full px-4 pt-16 pb-4">
@@ -42,7 +42,7 @@ console.log(props);
 
 <style scoped>
 .modal-base {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
