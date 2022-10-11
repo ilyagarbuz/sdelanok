@@ -1,9 +1,9 @@
 <template>
   <transition name="fade">
-    <div v-if="open" class="modal-base bg-white">
+    <div v-if="open" class="modal-base">
       <transition name="drop">
         <div class="inner h-full" v-show="open">
-          <div class="content bg-white h-full px-4 pt-16 pb-4">
+          <div class="content bg-white h-full px-4 py-16">
             <!-- Content wrapper -->
             <div class="content-wrapper md:mx-auto md:max-w-xl md:pt-12">
               <slot />
