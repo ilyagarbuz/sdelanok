@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div v-if="open" class="modal-base pointer-events-none">
+    <div v-if="open" class="modal-base pointer-events-auto">
       <transition name="drop">
         <div class="inner" v-show="open">
           <div class="content bg-white h-full px-4 py-16">
