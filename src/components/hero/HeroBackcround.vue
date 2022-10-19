@@ -7,7 +7,7 @@
 
 <style scoped>
 .hero__background {
-  background: url("@/assets/hero/hero_bg_1.png");
+  background: url("@/assets/img/hero/hero_bg_1.png");
   background-position: center;
   background-size: cover;
 }
