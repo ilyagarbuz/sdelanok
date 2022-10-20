@@ -7,10 +7,10 @@ const apartments = [
     time: "3 мес",
     size: 42,
     images: [
-      "/assets/img/portfolio/apart_1/1.jpg",
-      "/assets/img/portfolio/apart_1/2.jpg",
-      "/assets/img/portfolio/apart_1/3.jpg",
-      "/assets/img/portfolio/apart_1/4.jpg",
+      "/portfolio/apart_1/1.jpg",
+      "/portfolio/apart_1/2.jpg",
+      "/portfolio/apart_1/3.jpg",
+      "/portfolio/apart_1/4.jpg",
     ],
   },
   {
@@ -21,10 +21,10 @@ const apartments = [
     time: "3 мес",
     size: 42,
     images: [
-      "/assets/img/portfolio/apart_1/1.jpg",
-      "/assets/img/portfolio/apart_1/2.jpg",
-      "/assets/img/portfolio/apart_1/3.jpg",
-      "/assets/img/portfolio/apart_1/4.jpg",
+      "/portfolio/apart_1/1.jpg",
+      "/portfolio/apart_1/2.jpg",
+      "/portfolio/apart_1/3.jpg",
+      "/portfolio/apart_1/4.jpg",
     ],
   },
   {
@@ -35,10 +35,10 @@ const apartments = [
     time: "3 мес",
     size: 42,
     images: [
-      "/assets/img/portfolio/apart_1/1.jpg",
-      "/assets/img/portfolio/apart_1/2.jpg",
-      "/assets/img/portfolio/apart_1/3.jpg",
-      "/assets/img/portfolio/apart_1/4.jpg",
+      "/portfolio/apart_1/1.jpg",
+      "/portfolio/apart_1/2.jpg",
+      "/portfolio/apart_1/3.jpg",
+      "/portfolio/apart_1/4.jpg",
     ],
   },
   {
@@ -49,10 +49,10 @@ const apartments = [
     time: "3 мес",
     size: 42,
     images: [
-      "/assets/img/portfolio/apart_1/1.jpg",
-      "/assets/img/portfolio/apart_1/2.jpg",
-      "/assets/img/portfolio/apart_1/3.jpg",
-      "/assets/img/portfolio/apart_1/4.jpg",
+      "/portfolio/apart_1/1.jpg",
+      "/portfolio/apart_1/2.jpg",
+      "/portfolio/apart_1/3.jpg",
+      "/portfolio/apart_1/4.jpg",
     ],
   },
   {
@@ -63,10 +63,10 @@ const apartments = [
     time: "3 мес",
     size: 42,
     images: [
-      "/assets/img/portfolio/apart_1/1.jpg",
-      "/assets/img/portfolio/apart_1/2.jpg",
-      "/assets/img/portfolio/apart_1/3.jpg",
-      "/assets/img/portfolio/apart_1/4.jpg",
+      "/portfolio/apart_1/1.jpg",
+      "/portfolio/apart_1/2.jpg",
+      "/portfolio/apart_1/3.jpg",
+      "/portfolio/apart_1/4.jpg",
     ],
   },
   {
@@ -77,10 +77,10 @@ const apartments = [
     time: "3 мес",
     size: 42,
     images: [
-      "/assets/img/portfolio/apart_1/1.jpg",
-      "/assets/img/portfolio/apart_1/2.jpg",
-      "/assets/img/portfolio/apart_1/3.jpg",
-      "/assets/img/portfolio/apart_1/4.jpg",
+      "/portfolio/apart_1/1.jpg",
+      "/portfolio/apart_1/2.jpg",
+      "/portfolio/apart_1/3.jpg",
+      "/portfolio/apart_1/4.jpg",
     ],
   },
 ];

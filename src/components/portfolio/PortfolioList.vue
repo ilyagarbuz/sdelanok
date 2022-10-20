@@ -2,21 +2,30 @@
   <!-- Portfolio list -->
   <ul class="grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     <li v-for="apart in apartments" :key="apart.id" class="flex flex-col gap-4">
-      <img class="mb-4" src="@/assets/img/portfolio/apart_1/1.jpg" alt="aprt" />
+      <carousel :items-to-show="1">
+        <slide v-for="slide in apart.images" :key="slide">
+          <img class="mb-4" :src="require(`@/assets/img${slide}`)" alt="aprt" />
+        </slide>
+
+        <template #addons>
+          <navigation class="hidden md:block" />
+          <pagination class="md:hidden" />
+        </template>
+      </carousel>
       <p class="text-lg font-medium">{{ apart.title }}</p>
       <p class="text-base mb-3">{{ apart.address }}</p>
       <ul class="flex gap-12">
         <li class="flex flex-col items-center">
           <div><fai icon="wallet" class="text-3xl" /></div>
-          <div>{{ apart.price }} руб.</div>
+          <div class="text-sm">{{ apart.price }} руб.</div>
         </li>
         <li class="flex flex-col items-center">
           <div><fai icon="clock" class="text-3xl" /></div>
-          <div>{{ apart.time }} мес.</div>
+          <div class="text-sm">{{ apart.time }} мес.</div>
         </li>
         <li class="flex flex-col items-center">
           <div><fai icon="pen-square" class="text-3xl" /></div>
-          <div>{{ apart.size }} м<sup>2</sup></div>
+          <div class="text-sm">{{ apart.size }} м<sup>2</sup></div>
         </li>
       </ul>
     </li>
@@ -24,5 +33,23 @@
 </template>
 
 <script setup>
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 import { apartments } from "@/assets/data/portfolioData";
 </script>
+
+<style lang="scss">
+.carousel__icon {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.carousel {
+  cursor: pointer;
+  &:hover {
+    .carousel__icon {
+      opacity: 0.7;
+    }
+  }
+}
+</style>
