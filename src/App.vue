@@ -3,7 +3,7 @@
     <BaseHeader />
     <!-- Main -->
     <main>
-      <router-view @eventModal="openModal" />
+      <router-view @eventModal="openModal" @eventGallery="openGallery" />
     </main>
     <ContactBar @eventModal="openModal" />
     <BaseModal :open="isOpenModal" @close="isOpenModal = !isOpenModal">
@@ -12,6 +12,18 @@
         @close="isOpenModal = !isOpenModal"
         :button="modalData.button"
       />
+    </BaseModal>
+    <BaseModal :open="isOpenGallery" @close="isOpenGallery = !isOpenGallery">
+      <carousel :items-to-show="1">
+        <slide v-for="slide in galleryImages" :key="slide">
+          <img class="mb-4" :src="require(`@/assets/img${slide}`)" alt="aprt" />
+        </slide>
+
+        <template #addons>
+          <navigation />
+          <pagination />
+        </template>
+      </carousel>
     </BaseModal>
   </div>
 </template>
@@ -24,12 +36,21 @@ import ModalContent from "@/components/elements/modal/ModalContent.vue";
 import BaseForm from "@/components/elements/form/BaseForm.vue";
 import { ref } from "vue";
 
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+
 // Modal
 const isOpenModal = ref(false);
+const isOpenGallery = ref(false);
 const modalData = ref({});
+const galleryImages = ref([]);
 const openModal = (data) => {
   modalData.value = data;
   isOpenModal.value = true;
+};
+const openGallery = (images) => {
+  galleryImages.value = images;
+  isOpenGallery.value = true;
 };
 </script>
 

@@ -13,13 +13,22 @@
         Посмотрите, как выглядят готовые ремонты
       </p>
 
-      <PortfolioList />
+      <PortfolioList @eventGallery="eventGallery" />
     </div>
   </section>
 </template>
 
-<script setup>
+<script>
 import PortfolioList from "@/components/portfolio/PortfolioList.vue";
+
+export default {
+  components: { PortfolioList },
+  methods: {
+    eventGallery(images) {
+      this.$emit("eventGallery", images);
+    },
+  },
+};
 </script>
 
 <style scoped>

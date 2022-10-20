@@ -1,6 +1,6 @@
 <template>
   <HeroSection @eventModal="eventModal" />
-  <PortfolioSection />
+  <PortfolioSection @eventGallery="eventGallery" />
 </template>
 
 <script setup></script>
@@ -17,6 +17,9 @@ export default {
   methods: {
     eventModal(data) {
       this.$emit("eventModal", data);
+    },
+    eventGallery(images) {
+      this.$emit("eventGallery", images);
     },
   },
 };
