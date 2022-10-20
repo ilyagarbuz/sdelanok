@@ -52,4 +52,8 @@ import { apartments } from "@/assets/data/portfolioData";
     }
   }
 }
+
+.carousel__slide--visible {
+  transform: rotateY(0);
+}
 </style>
