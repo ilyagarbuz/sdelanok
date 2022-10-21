@@ -39,7 +39,7 @@
         ref="carousel"
       >
         <Slide v-for="(slide, index) in galleryImages" :key="slide">
-          <div class="carousel__item" @click="slideTo(index - 1)">
+          <div class="carousel__item" @click="slideTo(index)">
             <img
               class="mb-4"
               :src="require(`@/assets/img${slide}`)"
