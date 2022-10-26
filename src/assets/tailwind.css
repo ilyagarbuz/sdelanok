@@ -7,3 +7,7 @@
  .btn {
    @apply bg-at-blue hover:opacity-70 text-white font-medium py-2 px-10 rounded-sm drop-shadow-lg;
  }
+
+ .section-heading {
+  @apply text-3xl font-bold mb-12 lg:max-w-xl lg:mx-auto lg:text-center;
+ }

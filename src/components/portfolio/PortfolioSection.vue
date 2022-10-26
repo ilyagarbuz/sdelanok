@@ -2,7 +2,7 @@
   <!-- Portfolio section -->
   <section>
     <!-- Portfolio container -->
-    <div class="container pt-16">
+    <div class="container py-16">
       <!-- Portfolio heading -->
       <p
         class="text-3xl font-medium mb-12 lg:max-w-xl lg:mx-auto lg:text-center"
