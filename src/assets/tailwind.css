@@ -11,3 +11,7 @@
  .section-heading {
   @apply text-3xl font-bold mb-12 lg:max-w-xl lg:mx-auto lg:text-center;
  }
+
+ .section-heading--left {
+  @apply text-3xl font-bold mb-12 lg:max-w-xl text-left;
+ }
