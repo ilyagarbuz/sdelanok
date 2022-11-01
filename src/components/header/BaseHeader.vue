@@ -60,6 +60,13 @@
 <script setup>
 import NavigationList from "@/components/elements/NavigationList.vue";
 import SocialList from "@/components/elements/SocialList.vue";
-import { ref } from "vue";
+import { ref, watch } from "vue";
+import { useRoute } from "vue-router";
+
+const route = useRoute();
 const isHideMenu = ref(true);
+
+watch(route, () => {
+  isHideMenu.value = true;
+});
 </script>

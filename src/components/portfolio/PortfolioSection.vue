@@ -13,7 +13,7 @@
         Посмотрите, как выглядят готовые ремонты
       </p>
 
-      <PortfolioList @eventGallery="eventGallery" />
+      <PortfolioList @onEventGallery="eventGallery" />
     </div>
   </section>
 </template>
@@ -22,10 +22,11 @@
 import PortfolioList from "@/components/portfolio/PortfolioList.vue";
 
 export default {
+  emits: ["onEventGallery"],
   components: { PortfolioList },
   methods: {
     eventGallery(images) {
-      this.$emit("eventGallery", images);
+      this.$emit("onEventGallery", images);
     },
   },
 };

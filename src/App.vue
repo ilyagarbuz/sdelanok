@@ -3,8 +3,9 @@
     <BaseHeader />
     <!-- Main -->
     <main>
-      <router-view @eventModal="openModal" @eventGallery="openGallery" />
+      <router-view @eventModal="openModal" @onEventGallery="openGallery" />
     </main>
+    <BaseFooter />
     <ContactBar @eventModal="openModal" />
     <BaseModal :open="isOpenModal" @close="isOpenModal = !isOpenModal">
       <ModalContent :title="modalData.title" :text="modalData.text" />
@@ -54,6 +55,7 @@
 
 <script setup>
 import BaseHeader from "@/components/header/BaseHeader.vue";
+import BaseFooter from "@/components/footer/BaseFooter.vue";
 import ContactBar from "@/components/elements/ContactBar.vue";
 import BaseModal from "@/components/elements/modal/BaseModal.vue";
 import ModalContent from "@/components/elements/modal/ModalContent.vue";

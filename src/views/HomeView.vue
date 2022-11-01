@@ -1,6 +1,6 @@
 <template>
   <HeroSection @eventModal="eventModal" />
-  <PortfolioSection @eventGallery="eventGallery" />
+  <PortfolioSection @onEventGallery="eventGallery" />
   <BenefitsSection />
   <ContentSection />
   <QualitySection />
@@ -20,6 +20,7 @@ import FormSection from "@/components/form/FormSection.vue";
 import QuestionsSection from "@/components/questions/QuestionsSection.vue";
 
 export default {
+  emits: ["eventModal", "onEventGallery"],
   components: {
     HeroSection,
     PortfolioSection,
@@ -34,7 +35,7 @@ export default {
       this.$emit("eventModal", data);
     },
     eventGallery(images) {
-      this.$emit("eventGallery", images);
+      this.$emit("onEventGallery", images);
     },
   },
 };

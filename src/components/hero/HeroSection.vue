@@ -46,6 +46,7 @@
 import HeroBackground from "@/components/hero/HeroBackcround.vue";
 
 export default {
+  emits: ["eventModal"],
   components: {
     HeroBackground,
   },

@@ -38,6 +38,7 @@ import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 import { apartments } from "@/assets/data/portfolioData";
 
 export default {
+  emits: ["onEventGallery"],
   components: { Carousel, Slide, Pagination, Navigation },
   data() {
     return {
@@ -46,7 +47,7 @@ export default {
   },
   methods: {
     eventGallery(images) {
-      this.$emit("eventGallery", images);
+      this.$emit("onEventGallery", images);
     },
   },
 };

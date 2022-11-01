@@ -3,8 +3,11 @@
   <nav class="mb-12">
     <ul class="flex flex-col gap-3">
       <li>
-        <a href="#" class="text-lg text-at-blue font-medium hover:opacity-70"
-          >Главная</a
+        <router-link
+          :to="{ name: 'home' }"
+          href="#"
+          class="text-lg text-at-blue font-medium hover:opacity-70"
+          >Главная</router-link
         >
       </li>
       <li>
@@ -23,8 +26,11 @@
         >
       </li>
       <li>
-        <a href="#" class="text-lg text-at-blue font-medium hover:opacity-70"
-          >О компании</a
+        <router-link
+          :to="{ name: 'about' }"
+          href="#"
+          class="text-lg text-at-blue font-medium hover:opacity-70"
+          >О компании</router-link
         >
       </li>
     </ul>
