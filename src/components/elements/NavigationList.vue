@@ -11,8 +11,11 @@
         >
       </li>
       <li>
-        <a href="#" class="text-lg text-at-blue font-medium hover:opacity-70"
-          >Гарантия, оплата и другие вопросы</a
+        <router-link
+          :to="{ name: 'questions' }"
+          href="#"
+          class="text-lg text-at-blue font-medium hover:opacity-70"
+          >Гарантия, оплата и другие вопросы</router-link
         >
       </li>
       <li>

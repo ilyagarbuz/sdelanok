@@ -24,15 +24,11 @@
     <div class="container flex justify-between items-center pt-8">
       <!-- Logo Block -->
       <div class="logo header__logo">
-        <a href="#">
-          <!-- <fai
-            icon="trowel-bricks"
-            class="text-5xl md:text-6xl lg:text-7xl text-at-light-green"
-          /> -->
+        <router-link :to="{ name: 'home' }" href="#">
           <span class="text-4xl font-bold"
             >SDELAN.<span class="text-at-blue">OK</span></span
           >
-        </a>
+        </router-link>
       </div>
       <!-- Buttons Block -->
       <div class="flex items-center gap-10">
