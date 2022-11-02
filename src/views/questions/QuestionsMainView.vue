@@ -2,7 +2,7 @@
   <!-- Questions section -->
   <section>
     <!-- Questions container -->
-    <div class="container md:max-w-2xl pb-20 pt-28">
+    <div class="container md:max-w-2xl pb-20 pt-16 md:pt-28">
       <!-- Questions heading -->
       <router-link
         class="link text-lg flex gap-2 items-center mb-4"

@@ -2,7 +2,7 @@
   <!-- Questions section -->
   <section>
     <!-- Questions container -->
-    <div class="container md:max-w-2xl pb-20 pt-28">
+    <div class="container md:max-w-2xl pb-20 pt-16 md:pt-28">
       <!-- Questions heading -->
       <p class="section-heading--left">Гарантия, оплата и другие вопросы</p>
       <!-- Questions content -->
