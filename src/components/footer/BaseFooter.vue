@@ -5,8 +5,8 @@
     <div class="container pt-16 pb-7 md:max-w-2xl">
       <p class="mb-7">
         Гарантийное обслуживание
-        <a class="text-at-blue block" href="mailto:example@example.com"
-          >example@example.com</a
+        <a class="text-at-blue block" href="mailto:sdelan.ok.minsk@gmail.com"
+          >sdelan.ok.minsk@gmail.com</a
         >
       </p>
       <p class="mb-7">

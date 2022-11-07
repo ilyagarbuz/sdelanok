@@ -7,9 +7,7 @@
       <p
         class="text-3xl font-medium mb-12 lg:max-w-xl lg:mx-auto lg:text-center"
       >
-        <span class="font-bold"
-          >524 квартиры уже сделаны, 86 ремонтируются прямо сейчас.</span
-        >
+        <span class="font-bold">Более 100 квартир уже сделаны.</span>
         Посмотрите, как выглядят готовые ремонты
       </p>
 

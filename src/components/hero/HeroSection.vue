@@ -8,7 +8,7 @@
       <div class="md:text-center flex flex-col gap-10">
         <!-- Hero heading -->
         <h1 class="text-4xl font-medium md:max-w-2xl md:mx-auto">
-          Капитальный ремонт квартир по индивидуальному дизайн‑проекту
+          Капитальный ремонт квартир и домов по индивидуальному дизайн‑проекту
         </h1>
         <!-- Hero action -->
         <div class="">
@@ -31,9 +31,7 @@
             </li>
             <li class="flex gap-2 items-center">
               <fai icon="arrow-right" class="text-xs" />
-              <span class="font-normal md:font-medium"
-                >Персональный архитектор</span
-              >
+              <span class="font-normal md:font-medium">Договор и гарантия</span>
             </li>
           </ul>
         </div>

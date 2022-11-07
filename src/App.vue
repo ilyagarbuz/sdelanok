@@ -14,7 +14,11 @@
         :button="modalData.button"
       />
     </BaseModal>
-    <BaseModal :open="isOpenGallery" @close="isOpenGallery = !isOpenGallery">
+    <BaseModal
+      :open="isOpenGallery"
+      isGallery
+      @close="isOpenGallery = !isOpenGallery"
+    >
       <Carousel
         id="gallery"
         :items-to-show="1"
@@ -22,7 +26,7 @@
         v-model="currentSlide"
       >
         <Slide v-for="slide in galleryImages" :key="slide">
-          <div class="carousel__item">
+          <div class="carousel__item carousel__item--large">
             <img
               class="mb-4"
               :src="require(`@/assets/img${slide}`)"
@@ -40,7 +44,10 @@
         ref="carousel"
       >
         <Slide v-for="(slide, index) in galleryImages" :key="slide">
-          <div class="carousel__item" @click="slideTo(index)">
+          <div
+            class="carousel__item carousel__item--small"
+            @click="slideTo(index)"
+          >
             <img
               class="mb-4"
               :src="require(`@/assets/img${slide}`)"
@@ -88,8 +95,48 @@ function slideTo(val) {
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.carousel__slide {
-  padding-left: 5px;
-  padding-right: 5px;
+
+.carousel__item--large {
+  padding: 10px;
+  width: 100%;
+  height: 700px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 980px) {
+    height: 500px;
+  }
+
+  @media (max-width: 740px) {
+    height: 300px;
+  }
+
+  @media (max-width: 540px) {
+    height: 180px;
+  }
+}
+
+.carousel__item--small {
+  padding: 10px;
+  width: 100%;
+  height: 300px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 980px) {
+    height: 200px;
+  }
+
+  @media (max-width: 740px) {
+    height: 100px;
+  }
 }
 </style>

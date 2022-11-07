@@ -53,7 +53,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .carousel__icon {
   transition: opacity 0.3s ease;
   opacity: 0;
@@ -70,5 +70,16 @@ export default {
 
 .carousel__slide--visible {
   transform: rotateY(0);
+}
+
+.carousel__slide {
+  width: 370px;
+  height: 250px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 </style>

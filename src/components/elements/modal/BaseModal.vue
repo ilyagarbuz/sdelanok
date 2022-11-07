@@ -7,10 +7,19 @@
       <transition name="drop">
         <div class="inner" v-show="open">
           <div
-            class="content bg-white h-full px-4 py-16 md:max-w-2xl md:mx-auto md:mt-20"
+            class="content bg-white h-full px-4 py-16"
+            :class="{
+              'md:max-w-2xl md:mx-auto md:mt-20': !isGallery,
+            }"
           >
             <!-- Content wrapper -->
-            <div class="content-wrapper md:mx-auto md:max-w-xl md:pt-12">
+            <div
+              class="content-wrapper"
+              :class="{
+                'md:mx-auto md:max-w-xl md:pt-12': !isGallery,
+                'max-w-7xl mx-auto': isGallery,
+              }"
+            >
               <slot />
             </div>
             <button class="close py-1 px-3" @click="close">
@@ -29,6 +38,10 @@ const props = defineProps({
   open: {
     type: Boolean,
     required: true,
+  },
+  isGallery: {
+    type: Boolean,
+    default: false,
   },
 });
 const emit = defineEmits(["close"]);
