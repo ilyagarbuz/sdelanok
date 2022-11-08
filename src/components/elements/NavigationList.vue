@@ -19,8 +19,11 @@
         >
       </li>
       <li>
-        <a href="#" class="text-lg text-at-blue font-medium hover:opacity-70"
-          >Отзывы</a
+        <router-link
+          :to="{ name: 'reviews' }"
+          href="#"
+          class="text-lg text-at-blue font-medium hover:opacity-70"
+          >Отзывы</router-link
         >
       </li>
       <li>

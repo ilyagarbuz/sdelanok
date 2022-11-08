@@ -10,6 +10,7 @@ import HomeView from "@/views/HomeView.vue";
 import AboutView from "@/views/AboutView.vue";
 import QuestionsView from "@/views/questions/QuestionsView.vue";
 import QuestionsMainView from "@/views/questions/QuestionsMainView.vue";
+import ReviewsView from "@/views/ReviewsView";
 
 const routes = [
   {
@@ -56,6 +57,11 @@ const routes = [
     name: "questions-layout",
     props: { title: "Планировка", questions: questionsLayout },
     component: QuestionsMainView,
+  },
+  {
+    path: "/reviews",
+    name: "reviews",
+    component: ReviewsView,
   },
 ];
 
