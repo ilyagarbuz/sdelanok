@@ -10,7 +10,7 @@
         <!-- Review -->
         <div v-for="review in reviews" :key="review.title">
           <div
-            class="review_gallery grid grid-flow-col grid-rows-2 mb-6 gap-3 h-32"
+            class="review_gallery grid grid-flow-col grid-rows-2 mb-6 gap-3 h-32 sm:h-64 md:h-96"
           >
             <figure class="col-span-1 row-span-1">
               <img

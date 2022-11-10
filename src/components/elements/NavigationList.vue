@@ -27,11 +27,6 @@
         >
       </li>
       <li>
-        <a href="#" class="text-lg text-at-blue font-medium hover:opacity-70"
-          >Блог</a
-        >
-      </li>
-      <li>
         <router-link
           :to="{ name: 'about' }"
           href="#"

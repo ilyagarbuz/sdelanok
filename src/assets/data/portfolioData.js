@@ -1,11 +1,10 @@
 const apartments = [
   {
     id: 1,
-    title: "Ремонт однокомнатной кваритры",
-    address: "Улица Медовая, дом 7",
-    price: 750000,
+    title: "Ремонт трёхкомнатной кваритры",
+    price: 17500,
     time: "3 мес",
-    size: 42,
+    size: 75,
     images: [
       "/portfolio/apart_1/1.webp",
       "/portfolio/apart_1/2.webp",
@@ -22,11 +21,10 @@ const apartments = [
   },
   {
     id: 2,
-    title: "Ремонт однокомнатной кваритры",
-    address: "Улица Медовая, дом 7",
-    price: 750000,
-    time: "3 мес",
-    size: 42,
+    title: "Ремонт двухкомнатной кваритры",
+    price: 13250,
+    time: "2 мес",
+    size: 53,
     images: [
       "/portfolio/apart_2/1.webp",
       "/portfolio/apart_2/2.webp",
@@ -42,11 +40,10 @@ const apartments = [
   },
   {
     id: 3,
-    title: "Ремонт однокомнатной кваритры",
-    address: "Улица Медовая, дом 7",
-    price: 750000,
-    time: "3 мес",
-    size: 42,
+    title: "Ремонт двухкомнатной кваритры",
+    price: 14000,
+    time: "2,5 мес",
+    size: 57,
     images: [
       "/portfolio/apart_3/1.webp",
       "/portfolio/apart_3/2.webp",
@@ -63,9 +60,9 @@ const apartments = [
     id: 4,
     title: "Ремонт однокомнатной кваритры",
     address: "Улица Медовая, дом 7",
-    price: 750000,
-    time: "3 мес",
-    size: 42,
+    price: 9750,
+    time: "2 мес",
+    size: 39,
     images: [
       "/portfolio/apart_4/1.webp",
       "/portfolio/apart_4/2.webp",
@@ -77,11 +74,10 @@ const apartments = [
   },
   {
     id: 5,
-    title: "Ремонт однокомнатной кваритры",
-    address: "Улица Медовая, дом 7",
-    price: 750000,
-    time: "3 мес",
-    size: 42,
+    title: "Ремонт четырёхкомнатной кваритры",
+    price: 22000,
+    time: "3,5 мес",
+    size: 110,
     images: [
       "/portfolio/apart_5/1.webp",
       "/portfolio/apart_5/2.webp",
@@ -95,11 +91,10 @@ const apartments = [
   },
   {
     id: 6,
-    title: "Ремонт однокомнатной кваритры",
-    address: "Улица Медовая, дом 7",
-    price: 750000,
+    title: "Ремонт двухкомнатной кваритры",
+    price: 14500,
     time: "3 мес",
-    size: 42,
+    size: 63,
     images: [
       "/portfolio/apart_6/1.webp",
       "/portfolio/apart_6/2.webp",

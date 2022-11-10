@@ -16,8 +16,13 @@ import {
   faClock,
   faPenSquare,
   faChevronLeft,
+  faSquarePhone,
 } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram, faViber } from "@fortawesome/free-brands-svg-icons";
+import {
+  faInstagram,
+  faViber,
+  faTelegram,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 import "./assets/tailwind.css";
@@ -30,11 +35,13 @@ library.add(
   faArrowRight,
   faInstagram,
   faViber,
+  faTelegram,
   faEnvelope,
   faWallet,
   faClock,
   faPenSquare,
-  faChevronLeft
+  faChevronLeft,
+  faSquarePhone
 );
 
 createApp(App)

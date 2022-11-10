@@ -12,9 +12,8 @@
           <pagination class="md:hidden" />
         </template>
       </carousel>
-      <p class="text-lg font-medium">{{ apart.title }}</p>
-      <p class="text-base mb-3">{{ apart.address }}</p>
-      <ul class="flex gap-12">
+      <p class="text-lg font-medium text-center">{{ apart.title }}</p>
+      <ul class="flex gap-12 justify-center pr-5">
         <li class="flex flex-col items-center">
           <div><fai icon="wallet" class="text-3xl" /></div>
           <div class="text-sm">{{ apart.price }} руб.</div>
