@@ -74,7 +74,7 @@ export default {
         this.$swal({
           icon: "success",
           title: "Отлично!",
-          text: "Менеджер свяжется с вами в ближайшее время.",
+          text: "Наш специалист свяжется с вами в ближайшее время.",
           confirmButtonText: "Хорошо",
         });
       } catch (error) {
