@@ -26,7 +26,7 @@
             <li class="flex gap-2 items-center">
               <fai icon="arrow-right" class="text-xs" />
               <span class="font-normal md:font-medium"
-                >Индивидуальный дизайн-проект</span
+                >Дизайн-проект в подарок</span
               >
             </li>
             <li class="flex gap-2 items-center">
