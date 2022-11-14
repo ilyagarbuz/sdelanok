@@ -20,7 +20,7 @@
         </li>
         <li class="flex flex-col items-center">
           <div><fai icon="clock" class="text-3xl" /></div>
-          <div class="text-sm">{{ apart.time }} мес.</div>
+          <div class="text-sm">{{ apart.time }}.</div>
         </li>
         <li class="flex flex-col items-center">
           <div><fai icon="pen-square" class="text-3xl" /></div>
