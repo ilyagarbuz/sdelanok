@@ -20,7 +20,7 @@
             :to="{ name: 'questions-price' }"
             class="text-2xl text-at-blue font-medium hover:opacity-70"
             href="#"
-            >Стоимаость и оплата</router-link
+            >Стоимость и оплата</router-link
           >
         </li>
         <li>
